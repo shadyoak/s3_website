@@ -1,6 +1,6 @@
 ### Supported tags and respective `Dockerfile` links
 
-* latest ([Dockerfile](https://github.com/shadyoak/s3_website/blob/master/Dockerfile))
+* [`3.1.0`]((https://github.com/shadyoak/s3_website/blob/master/Dockerfile)), [`latest`]((https://github.com/shadyoak/s3_website/blob/master/Dockerfile)) ([Dockerfile](https://github.com/shadyoak/s3_website/blob/master/Dockerfile))
 
 ### S3 Website Docker Image
 
@@ -11,6 +11,14 @@ This is a Docker image for the [s3_website](https://github.com/laurilehmijoki/s3
 To run this image:
 
 `docker run --rm -v $(pwd):/app shadyoak/s3_website [COMMAND]`
+
+For example:
+
+```
+docker run --rm -v $(pwd):/app shadyoak/s3_website cfg create
+docker run --rm -v $(pwd):/app shadyoak/s3_website cfg apply --headless --autocreate-cloudfront-dist
+docker run --rm -v $(pwd):/app shadyoak/s3_website push
+```
 
 See the [s3_website](https://github.com/laurilehmijoki/s3_website) documentation for more details on available commands and usage.
 
