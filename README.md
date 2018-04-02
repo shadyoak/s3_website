@@ -1,6 +1,6 @@
 ### Supported tags and respective `Dockerfile` links
 
-* `3.1.0`, `latest` ([Dockerfile](https://github.com/shadyoak/s3_website/blob/master/Dockerfile))
+* `3.4.0`, `latest` ([Dockerfile](https://github.com/shadyoak/s3_website/blob/master/Dockerfile))
 
 ### S3 Website Docker Image
 
